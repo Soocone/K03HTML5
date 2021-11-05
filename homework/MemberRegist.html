@@ -6,6 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MemberRegist.html</title>
 
+    <!-- <style>
+        *{ font-size: 12px; font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+        body영역 좌측 td에 class="tblTitle" 부여한 다음
+        .tblTitle{background-color:#E4E5E9; font-weight:bold; padding:10px;}
+        body영역 우측td에 class="tblContent" 부여한 다음
+        .tblContent{background-color:white; padding:10px;}
+
+        input속성에 type이 text인 경우
+        input[type=text]{border:1px solid #AFAFAF;}
+
+        input속성에 type이 button인 경우
+        input[type=button]{border:1px solid gray;}
+
+        body영역 input에 class="btn1" 부여한 다음
+        .btn1{background-color:black; color:white;}
+
+    </style> -->
+
 </head>
 <body>
     <b style="text-align: right; font-size:12px">
@@ -23,6 +42,11 @@
         <strong style="color: rgb(209, 0, 0);">*</strong>
         <strong style="color:grey">필수 입력</strong>
     </b>
+    <!--  쌤 방식 테두리.
+        <table border=0 width=670 style="background-color:silver; border-spacing:1px;">
+        그다음 각각의 셀에 style="background-color:white; padding:10px;" 넣으면 됨
+     -->
+
     <table border="1" cellpadding="8" summary="회원가입 폼입니다."
         style="width: 680px; padding: 8px;
             border: 1px rgb(158, 158, 158) solid;
@@ -38,10 +62,12 @@
                 <td style="background-color: rgb(231, 228, 228); height:20px">
                     <strong style="color: rgb(209, 0, 0);">*</strong>
                     <strong>아이디</strong></td>
+                    <!-- <td><span>*</span>아이디</td> 이렇게 써도 됨-->
                 <td>
                     <input type="text" name="id" size="10">
                     <input style="color: white; background-color: rgb(44, 44, 44);
                         font-size: 11px;" type="button" value="중복확인">
+                    <!-- <button type="button">중복확인</button> 으로 써도 됨 -->
                     <span style="color: grey;">+4~15자, 첫 영문자, 영문자와 숫자 조합</span>
                 </td>
             </tr>
